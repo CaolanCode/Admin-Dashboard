@@ -125,3 +125,24 @@
   font-weight: 700;
   border-radius: 2vh;
 }
+/* main content */
+.project{
+  background-color: white;
+  border-radius: 2vh;
+  padding: 1vh 1vw;
+}
+.project .header{
+  font-weight: 700;
+}
+.project .content{
+  color: gray;
+  font-size: .9rem;
+}
+.icons{
+  display: flex;
+  justify-content: flex-end;
+  gap: 1vw;
+}
+.icons span{
+  color: black;
+}
