@@ -11,14 +11,6 @@
   grid-template-columns: 1fr 5fr;
   grid-template-rows: 1fr 4fr;
 }
-.heading{
-  background-color: white;
-}
-.side-bar{
-  background-color: rgb(66, 176, 244);
-  grid-row: 1 / 3;
-  padding: 2vh 1vw;
-}
 .main-content{
   background-color: rgb(232, 231, 231);
 }
@@ -31,6 +23,11 @@
   color: white;
 }
 /* sidebar */
+.side-bar{
+  background-color: rgb(66, 176, 244);
+  grid-row: 1 / 3;
+  padding: 2vh 1vw;
+}
 .top-icons, .middle-icons, .bottom-icons{
   display: grid;
   grid-template-columns: 1fr 4fr;
@@ -45,4 +42,86 @@
 }
 .top-icons{
   font-size: 1.2rem;
+}
+/* heading */
+.heading{
+  background-color: white;
+  font-weight: 700;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  padding: 0 2vw;
+}
+.search-container{
+  display: flex;
+  align-items: center;
+}
+.search-container button{
+  background-color: white;
+  margin-right: 2vw;
+}
+.search-container button span{
+  color: gray;
+}
+.search-container input{
+  background-color: rgb(201, 198, 198);
+  width: 40vw;
+  height: 3vh;
+  border-radius: 2vh;
+}
+.notification-icon{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 4vw;
+}
+.notification-icon button span{
+  color: gray;
+  background-color: white;
+}
+.profile-image{
+  background-color: rgb(255, 230, 0);
+}
+.notification-icon .profile-image{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+}
+.username-image{
+  display: flex;
+  align-items: center;
+}
+.username-image .profile-image{
+  width: 80px;
+  height: 80px;
+  border-radius: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+}
+.username-container{
+  margin-left: 2vw;
+}
+.greeting{
+  font-size: .7rem;
+  margin-bottom: 1vh;
+}
+.username{
+  font-size: 1.2rem;
+  margin-top: 1vh;
+}
+.button-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.button-container button{
+  padding: 1vh 2vw;
+  background-color: rgb(66, 176, 244);
+  color: white;
+  font-weight: 700;
+  border-radius: 2vh;
 }
