@@ -6,9 +6,8 @@
 }
 .container{
   display: grid;
-  min-height: 100vh;
   grid-template-columns: 1fr 5fr;
-  grid-template-rows: 1fr 5fr;
+  grid-template-rows: 1fr 6fr;
 }
 .main-content{
   background-color: #e5e5e5;
@@ -16,7 +15,7 @@
 .material-symbols-outlined {
   font-variation-settings:
   'FILL' 0,
-  'wght' 700,
+  'wght' 500,
   'GRAD' 0,
   'opsz' 48;
   color: white;
@@ -89,22 +88,22 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 50px;
-  height: 50px;
-  border-radius: 25px;
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
 }
 .username-image{
   display: flex;
   align-items: center;
 }
 .username-image .profile-image{
-  width: 80px;
-  height: 80px;
-  border-radius: 40px;
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 .username-container{
   margin-left: 2vw;
@@ -131,53 +130,22 @@
   border: none;
 }
 /* main content */
-.project{
+.project-table, .announcement-table, .trending-table{
   background-color: white;
+  padding: 2vh 1vw;
   border-radius: 1vh;
-  padding: 3vh 1vw;
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-  border-left: .5vw #fbbf24 solid;
-}
-.project .header{
-  font-weight: 700;
-}
-.project .content{
-  color: gray;
-  font-size: .9rem;
-}
-.icons{
-  display: flex;
-  justify-content: flex-end;
-  gap: 1vw;
-}
-.icons span{
-  color: black;
 }
 .main-content{
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 4vh 1fr 1fr 1fr;
-  padding: 2vh 1vw;
-}
-.projects-container{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 10px;
+  grid-template-columns: 4fr 4fr 3fr;
+  grid-template-rows: repeat(auto-fit , minmax(10vh, 25vh));
+  row-gap: 2vh;
+  column-gap: 2vw;
+  padding: 2vh 2vw;
 }
 .title{
   font-weight: 700;
-  display: flex;
-  align-items: center;
-}
-/* right side of main content */
-.trending-table{
-  display: grid;
-  grid-template-columns: 1fr 4fr;
-  row-gap: 2vh;
-  align-items: center;
-  padding: 2vh 1vw;
+  padding-bottom: 1vh;
 }
 .user-icon{
   display: flex;
@@ -191,15 +159,50 @@
   background-color: #2dd4bf;
   color: #831843;
 }
-.announcement-table, .trending-table{
-  background-color: white;
-  border-radius: 1vh;
+.username{
+  font-size: .8rem;
 }
-.announcement-table{
-  padding: 3vh 1vw;
+.org{
+  font-size: .8rem;
+  color: gray;
+}
+.trending-table{
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  row-gap: 2vh;
+  align-items: center;
+}
+.trending-container{
+  margin-top: 10vh;
+}
+.project-table{
+  border-left: .5vw #fbbf24 solid;
+  flex: 1;
+  position: relative;
+}
+.project{
+  display: flex;
+  flex-direction: column;
+}
+.icons{
+  position: absolute;
+  bottom: 1vh;
+  right: 1vw;
+}
+.icons span{
+  color: black;
+  margin-left: 1vw;
+}
+.project-table .header{
+  font-weight: 700;
+  margin-bottom: .5vh;
+}
+.project-table .content{
+  color: gray;
+  font-size: .9rem;
 }
 .ann-heading{
-  font-size: .7rem;
+  font-size: .8rem;
   font-weight: 700;
 }
 .ann-content{
@@ -217,14 +220,4 @@
 .bottom-ann{
   padding-top: 2vh;
   border-top: 1px gray solid;
-}
-.user-handle .username{
-  font-size: .8rem;
-}
-.user-handle .org{
-  font-size: .8rem;
-  color: gray;
-}
-.project-title{
-  grid-column: 1 / 3;
 }
