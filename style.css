@@ -138,7 +138,7 @@
 .main-content{
   display: grid;
   grid-template-columns: 4fr 4fr 3fr;
-  grid-template-rows: repeat(auto-fit , minmax(10vh, 25vh));
+  grid-template-rows: repeat(3, 1fr);
   row-gap: 2vh;
   column-gap: 2vw;
   padding: 2vh 2vw;
@@ -171,9 +171,6 @@
   grid-template-columns: 1fr 4fr;
   row-gap: 2vh;
   align-items: center;
-}
-.trending-container{
-  margin-top: 10vh;
 }
 .project-table{
   border-left: .5vw #fbbf24 solid;
