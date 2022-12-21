@@ -2,14 +2,13 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  border: 1px black solid;
   font-family: Roboto, sans-serif;
 }
 .container{
   display: grid;
   min-height: 100vh;
   grid-template-columns: 1fr 5fr;
-  grid-template-rows: 1fr 4fr;
+  grid-template-rows: 1fr 5fr;
 }
 .main-content{
   background-color: #e5e5e5;
@@ -58,6 +57,7 @@
 .search-container button{
   background-color: white;
   margin-right: 2vw;
+  border: none;
 }
 .search-container button span{
   color: black;
@@ -67,12 +67,16 @@
   width: 40vw;
   height: 3vh;
   border-radius: 2vh;
+  border: none;
 }
 .notification-icon{
   display: flex;
   align-items: center;
   justify-content: flex-end;
   gap: 4vw;
+}
+.notification-icon button{
+  border: none;
 }
 .notification-icon button span{
   color: black;
@@ -124,6 +128,7 @@
   color: white;
   font-weight: 700;
   border-radius: 2vh;
+  border: none;
 }
 /* main content */
 .project{
@@ -152,7 +157,8 @@
 }
 .main-content{
   display: grid;
-  grid-template-columns: 3fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 4vh 1fr 1fr 1fr;
   padding: 2vh 1vw;
 }
 .projects-container{
@@ -160,9 +166,65 @@
   grid-template-columns: 1fr 1fr;
   gap: 10px;
 }
-.project-title{
+.title{
   font-weight: 700;
-  grid-column: 1 / -1;
   display: flex;
   align-items: center;
+}
+/* right side of main content */
+.trending-table{
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  row-gap: 2vh;
+  align-items: center;
+  padding: 2vh 1vw;
+}
+.user-icon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  font-weight: 700;
+  border-radius: 20px;
+  height: 40px;
+  width: 40px;
+  background-color: #2dd4bf;
+  color: #831843;
+}
+.announcement-table, .trending-table{
+  background-color: white;
+  border-radius: 1vh;
+}
+.announcement-table{
+  padding: 3vh 1vw;
+}
+.ann-heading{
+  font-size: .7rem;
+  font-weight: 700;
+}
+.ann-content{
+  font-size: .7rem;
+  font-weight: 300;
+  color: gray;
+}
+.centre-ann{
+  padding: 2vh 0;
+}
+.top-ann{
+  padding-bottom: 2vh;
+  border-bottom: 1px gray solid;
+}
+.bottom-ann{
+  padding-top: 2vh;
+  border-top: 1px gray solid;
+}
+.user-handle .username{
+  font-size: .8rem;
+}
+.user-handle .org{
+  font-size: .8rem;
+  color: gray;
+}
+.project-title{
+  grid-column: 1 / 3;
 }
