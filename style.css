@@ -12,7 +12,7 @@
   grid-template-rows: 1fr 4fr;
 }
 .main-content{
-  background-color: rgb(232, 231, 231);
+  background-color: #e5e5e5;
 }
 .material-symbols-outlined {
   font-variation-settings:
@@ -60,10 +60,10 @@
   margin-right: 2vw;
 }
 .search-container button span{
-  color: gray;
+  color: black;
 }
 .search-container input{
-  background-color: rgb(201, 198, 198);
+  background-color: #e5e5e5;
   width: 40vw;
   height: 3vh;
   border-radius: 2vh;
@@ -75,11 +75,11 @@
   gap: 4vw;
 }
 .notification-icon button span{
-  color: gray;
+  color: black;
   background-color: white;
 }
 .profile-image{
-  background-color: rgb(255, 230, 0);
+  background-color: #fbbf24;
 }
 .notification-icon .profile-image{
   display: flex;
@@ -128,11 +128,12 @@
 /* main content */
 .project{
   background-color: white;
-  border-radius: 2vh;
+  border-radius: 1vh;
   padding: 3vh 1vw;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
+  border-left: .5vw #fbbf24 solid;
 }
 .project .header{
   font-weight: 700;
