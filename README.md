@@ -1,6 +1,11 @@
 # Admin-Dashboard
 
-Create an Admin Dashboard as specified in The Odin Project
+- Duplicate Admin Dashboard from Image on The Odin Project
+
+## Objective
+- Learn CSS Grid
+
+[View Dashboard](https://caolancode.github.io/Admin-Dashboard/)
 
 <img src="Images/dashboard-project.png" alt="image of project" width="500"/>
 
